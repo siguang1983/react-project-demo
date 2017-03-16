@@ -1,0 +1,9 @@
+.login-box { width: 400px; border: 1px #ccc solid; background-color: #fff; position: absolute; transform: translate(-50%, -50%); top: 50%; left: 50%; padding: 20px; box-shadow: 5px 5px 5px rgba(155, 153, 153, .1); }
+.login-box h1 { text-align: center; font-size: 18px;display: bloc; margin-bottom: 10px; }
+.login-form p{ padding: 10px 0; }
+.login-btn { width: 100px; height: 25px;}
+.ptb10 { padding: 10px 0;}
+.login-btn-box { text-align: center; padding-top: 20px;}
+.lh {line-height: 27px;}
+.w200 { width: 300px; margin: 0 auto; }
+
