@@ -3,13 +3,14 @@
  * Date: 2016/12/28
  * Time: 15:04
  */
-let webpack = require('webpack');
-let path = require('path');
-let HtmlWebpackPlugin = require('html-webpack-plugin');
+const webpack = require('webpack');
+const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const openBrowserWebpackPlugin = require('open-browser-webpack-plugin');
 
-let basePath = __dirname;
-let appPath = path.resolve(basePath, 'src');
-let buildPath = path.resolve(basePath, 'build');
+const basePath = __dirname;
+const appPath = path.resolve(basePath, 'src');
+const buildPath = path.resolve(basePath, 'build');
 
 module.exports = {
     entry: {
@@ -18,8 +19,8 @@ module.exports = {
 
     output: {
         path: buildPath,
-        filename: '[name].min.js?[hash]',
-        chunkFilename: "[name].min.js?[hash]"
+        filename: '[name].min.js',
+        chunkFilename: '[name].min.js'
     },
 
     module: {
@@ -46,7 +47,6 @@ module.exports = {
         ]
     },
 
-
     plugins: [
 
         // html
@@ -64,20 +64,20 @@ module.exports = {
         }),
 
         // 热启动
-        new webpack.HotModuleReplacementPlugin()
+        new webpack.HotModuleReplacementPlugin(),
+        // 自动打开浏览器
+        new openBrowserWebpackPlugin({ url: 'http://localhost:3001' })
     ],
-
 
     // 查找依赖
     resolve:{
-
         // require或alias时不需要写后缀
         extensions: [".js", ".jsx", ".css", ".json"],
     },
 
     // webpack-dev-server 配置
     devServer: {
-        port: 8090,                 // 端口
+        port: 3001,                 // 端口
         contentBase: 'build',       // 内容目录
         hot: true,		            // 热刷新
         inline: true

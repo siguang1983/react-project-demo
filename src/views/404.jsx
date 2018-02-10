@@ -8,3 +8,4 @@ class Error404 extends Component {
 		</div>
 	}
 }
+export default Error404;

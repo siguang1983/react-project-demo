@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import ReactDom, { render } from 'react-dom'
-import Side from './side/index.jsx'
-import Menu from './menu/index.jsx'
+import Side from './side/index'
+import Menu from './menu/index'
 
 class Admin extends Component {
 	constructor(props){
@@ -10,7 +10,7 @@ class Admin extends Component {
 	}
 	render(){
 		return <div className="main">
-			<Menu />
+			{/* <Menu /> */} 
 			
 			<div className="content clearfix">
 				<div className="side">

@@ -12,7 +12,7 @@ body {
     /*height: 100%;*/
     overflow-x: hidden;
     -webkit-overflow-scrolling: touch;
-    font-size: 12px;}
+    font-size: 14px;}
 
 article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
     display: block; }
@@ -170,15 +170,15 @@ decline
 
 /* admin */
 html,body { height: 100%; overflow:hidden }
-a { color: #fff; }
-a:hover { color: #8facce; }
+a { color: #999 }
+a:hover { color: rgb(237, 236, 236); }
 .main, #app { height: 100%; }
-.menu {height: 60px; line-height: 60px; background-color: #1f2d3d; box-shadow: 0px 5px 3px rgba(0,0,0, .2); position: relative; z-index: 10 }
+.menu {height: 60px; line-height: 60px; background-color: #073069; box-shadow: 0px 5px 3px rgba(0,0,0, .2); position: relative; z-index: 10 }
 .menu-right { float: right; margin-right: 20px; color: #fff;}
 .logo { padding-left: 20px; font-size: 20px;  color: #b7c3d2; float: left; }
 .content { height: 100%; }
-.side { width:200px; height: 100%; float: left; background-color: #324157; overflow-y: auto; }
-.side li { height: 56px; line-height: 56px; color: #bfcbd9; font-size: 14px; cursor: pointer; }
+.side { width:200px; height: 100%; float: left; background-color: #222; overflow-y: auto; }
+.side li { height: 56px; line-height: 56px; color: #bfcbd9; font-size: 14px; cursor: pointer; border-bottom: 1px #373636 solid; }
 .side li:hover { transition: .2s; background-color: #435468;}
 .side li a, .side li a:hover { color: #bfcbd9; display: block; height: 56px; padding: 0 20px; }
 .side li a:hover{ padding: 0 20px;}

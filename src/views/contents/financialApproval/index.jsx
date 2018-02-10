@@ -80,7 +80,6 @@ class Remittance extends Component {
 			type: 'post',
 			dataType:'json',
 			success: function(res){
-				debugger;
 				if(res.status == 0){
 					that.setState({data: res.data.list})
 					// data = res.data.list;

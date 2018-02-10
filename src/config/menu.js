@@ -42,24 +42,6 @@ const menuTree = [
         icon: "fa fa-minus-square-o",
     },
     {
-        permission: "remittanceConfirm:audit",
-        index: "remittance",
-        title: "汇款确认管理",
-        icon: "fa fa-check-square-o",
-        children: [
-            {
-                permission: "remittanceDetail:manage",
-                index: "remittanceDetail",
-                title: "汇款明细",
-            },
-            {
-                permission: "remittanceConfirm:manage",
-                index: "remittanceConfirmation",
-                title: "汇款确认",
-            }
-        ]
-    },
-    {
         permission: "account_check_report",
         index: "accountCheckReport",
         title: "对账报表",

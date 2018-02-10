@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack-dev-server --progress --profile --colors --hot --inline --history-api-fallback",
+    "dev": "webpack-dev-server --progress --profile --colors --hot --inline --history-api-fallback",
+    "start": "webpack-dev-server --progress --colors --hot --content-base --history-api-fallback --config ./webpack.config.js",
     "build": "webpack --progress --profile --colors --config webpack.config.js"
   },
   "author": "",
@@ -21,19 +22,24 @@
     "babel-preset-stage-2": "^6.22.0",
     "babel-preset-stage-3": "^6.22.0",
     "css-loader": "^0.27.1",
-    "history": "^4.6.0",
+    "echarts": "^4.0.2",
+    "file-loader": "^1.1.6",
+    "history": "^4.7.2",
+    "html-webpack-plugin": "^2.30.1",
     "i": "^0.3.5",
     "jquery": "^3.1.1",
     "less": "^2.7.2",
     "less-loader": "^3.0.0",
     "mockjs": "^1.0.1-beta3",
     "npm": "^4.4.1",
+    "open-browser-webpack-plugin": "^0.0.5",
     "react": "^15.4.2",
     "react-dom": "^15.4.2",
     "react-hot-loader": "^1.3.1",
     "react-router": "^3.0.2",
     "sass-loader": "^6.0.3",
-    "style-loader": "^0.13.2"
+    "style-loader": "^0.13.2",
+    "url-loader": "^0.6.2"
   },
   "devDependencies": {
     "mockjs": "^1.0.1-beta3",
